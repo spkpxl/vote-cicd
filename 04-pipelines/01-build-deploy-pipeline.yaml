@@ -14,7 +14,7 @@ spec:
   tasks:
   - name: build-image
     taskRef:
-      name: buildah-v0-8-0
+      name: buildah-v0-10-0
       kind: ClusterTask
     resources:
       inputs:
@@ -26,7 +26,7 @@ spec:
     params:
     - name: TLSVERIFY
       value: "false"
-  - name: create-upate-deployment
+  - name: create-update-deployment
     taskRef:
       name: oc-apply-deployment
     resources:
